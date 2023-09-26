@@ -31,6 +31,9 @@ public class BasePage {
 
 
 
+    public void logout(){
+        linkLogout.click();
+    }
 
     
 

@@ -1,5 +1,6 @@
 package com.demoqa.pages;
 
+import com.demoqa.utility.ConfigurationReader;
 import com.demoqa.utility.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -30,8 +31,20 @@ public class LoginPage extends BasePage{
 
 
 
+    public void login(){
+        String userName= ConfigurationReader.getProperties("userName");
+        String password= ConfigurationReader.getProperties("password");
 
+        inputUserName.sendKeys(userName);
+        inputPassword.sendKeys(password);
+        buttonLogin.click();
+    }
 
+    public void login(String userName,String password){
+        inputUserName.sendKeys(userName);
+        inputPassword.sendKeys(password);
+        buttonLogin.click();
+    }
 
 
 }
