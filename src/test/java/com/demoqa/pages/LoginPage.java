@@ -29,6 +29,9 @@ public class LoginPage extends BasePage{
     public WebElement buttonNewUser;
 
 
+    @FindBy(id = "output")
+    public WebElement resultString;
+
 
 
     public void login(){

@@ -38,6 +38,14 @@ public class BrowserUtility {
     }
 
 
+    public static void waitUntilUrlContains(String includedUrl){
+
+        WebDriverWait wait=new WebDriverWait(Driver.getDriver(), 10);
+        wait.until(ExpectedConditions.urlContains(includedUrl));
+    }
+
+
+
     public static void verifyIsPageLoaded(){
 
         JavascriptExecutor js= (JavascriptExecutor) Driver.getDriver();
@@ -80,7 +88,7 @@ public class BrowserUtility {
 
     }
 
-    public static void scrollByVerticalAutomatically(WebElement element){
+    public static void scrollByVerticalAutomaticallyAndClick(WebElement element){
 
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
 

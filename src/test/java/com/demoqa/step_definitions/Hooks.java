@@ -17,12 +17,12 @@ public class Hooks {
     public void setUpScenario(){
 
         Driver.getDriver();
-        System.out.println("====Setting up browser using cucumber @Before");
+
     }
 
    // @Before("@db")
     public void setUpScenarioForDatabase(){
-        System.out.println("====This will only apply to scenarios with @db tag");
+
     }
 
     @After
@@ -38,17 +38,17 @@ public class Hooks {
 
 
         Driver.closeDriver();
-        System.out.println("====Closing browser using cucumber @After");
+
     }
 
     //@BeforeStep
     public void setupStep(){
-        System.out.println("This will be implemented before each step");
+
     }
 
    // @AfterStep
     public void afterStep(){
-        System.out.println("This will be implemented after each step");
+
 
     }
 
