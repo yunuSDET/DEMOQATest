@@ -35,6 +35,9 @@ Feature: Book Store Login Feature
 
 
 
+
+
+
   Scenario: Negative Login scenario with wrong userName,correct password
     Given user is on the login page
     When user enters "wrongUserName" as userName
