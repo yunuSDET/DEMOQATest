@@ -19,6 +19,10 @@ public class BrowserUtility {
         }
     }
 
+    public static void waitUntilAlertOccurs(){
+        WebDriverWait wait=new WebDriverWait(Driver.getDriver(), 10);
+        wait.until(ExpectedConditions.alertIsPresent());
+    }
     public static void waitForVisibilityOf(WebElement webElement){
 
         WebDriverWait wait=new WebDriverWait(Driver.getDriver(), 10);

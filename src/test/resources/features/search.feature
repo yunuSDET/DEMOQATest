@@ -1,6 +1,6 @@
 Feature: Search book feature on Book Store Page
 
-  @wip
+
   Scenario: Search books by any text (in title,author,publisher)
     Given user is logged in
     Given user is on the Book Store page
