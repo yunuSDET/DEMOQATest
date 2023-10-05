@@ -1,5 +1,5 @@
 
-@login
+@login @smoke
 Feature: Book Store Login Feature
 
 

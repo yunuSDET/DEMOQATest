@@ -1,5 +1,5 @@
 
-@addDeleteBooks
+@addDeleteBooks @smoke
   Feature: Add and delete books
 
 

@@ -1,4 +1,4 @@
-@changeRowNumber
+@changeRowNumber  @smoke
 Feature: Changing the row number feature
 
 

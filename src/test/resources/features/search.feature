@@ -1,4 +1,4 @@
-@search
+@search  @smoke
 Feature: Search book feature on Book Store Page
 
 

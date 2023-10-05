@@ -1,6 +1,6 @@
 
 
-@logout
+@logout @smoke
 Feature: Book Store Logout Feature
 
   Scenario: Logout scenario
